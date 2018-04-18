@@ -160,7 +160,7 @@ def problem4a(strings):
         a = len(strings[k])
         if is_prime(a) is True:
             return strings[k]
-    return -1
+    return int(-1)
 
 
 def run_test_problem4b():
@@ -260,10 +260,10 @@ def problem4b(list_of_tuples_of_strings):
     #                    AND HAS AN ELEGANT SOLUTION.  DO NOT GET STUCK ON IT!
     # -------------------------------------------------------------------------
     a = problem4a(list_of_tuples_of_strings)
-    if a != -1:
-        return True
+    if a is int(-1):
+        return False
 
-    return False
+    return True
 
 
 ###############################################################################

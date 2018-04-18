@@ -7,7 +7,7 @@ Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
 
 
 ###############################################################################
-# TODO: 2.
+# DONE: 2.
 #   In this problem, you will go through the methods of the  Person  class
 #   that is defined below, one by one, in the order that they appear.
 #   For each method:
@@ -62,7 +62,7 @@ class Person(object):
         Increments this Person's age.
         ALso prints 'Happy birthday!'.
         """
-        # TODO: Implement and test this method.
+        # DONE: Implement and test this method.
         self.age = self.age + 1
         print('Happy Birthday!')
 
@@ -71,7 +71,7 @@ class Person(object):
         What comes in: A non-negative integer n.
         Side effects:  Calls the  celebrate_birthday  method  n  times.
         """
-        # TODO: Implement and test this method.
+        # DONE: Implement and test this method.
         for k in range(n):
             Person.celebrate_birthday(self)
 
@@ -79,7 +79,7 @@ class Person(object):
         """
         Returns a new Person whose age is twice this Person's age.
         """
-        # TODO: Implement and test this method.
+        # DONE: Implement and test this method.
         new = self.age * 2
         return new
 

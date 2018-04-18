@@ -3,7 +3,7 @@ Exam 2, problem 1.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
          their colleagues and PUT_YOUR_NAME_HERE.  April 2018.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
@@ -35,6 +35,11 @@ def run_test_problem1():
     print('--------------------------------------------------')
     print('Testing the   problem1   function:')
     print('--------------------------------------------------')
+    expected = '762'
+    rectangles = [Rect(5, 10), Rect(4, 3), Rect(100, 7)]
+    actual = problem1(rectangles)
+    print('Expected:', expected)
+    print('Actual  :', actual)
 
 
 def problem1(rectangles):
@@ -55,6 +60,12 @@ def problem1(rectangles):
     # -------------------------------------------------------------------------
     # TODO: 4. Implement and test this function.
     # -------------------------------------------------------------------------
+    total = 0
+    for k in range(len(rectangles)):
+        rectangle = rectangles[k]
+        area = rectangle.h * rectangle.w
+        total = total + area
+    return total
 
 
 # -----------------------------------------------------------------------------

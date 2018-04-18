@@ -254,16 +254,15 @@ def problem4b(list_of_tuples_of_strings):
       :type [str]
     """
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     #          Tests have been written for you (above).
     #    *** IMPORTANT:  THIS PROBLEM COUNTS ONLY 2 POINTS
     #                    AND HAS AN ELEGANT SOLUTION.  DO NOT GET STUCK ON IT!
     # -------------------------------------------------------------------------
-    a = problem4a(list_of_tuples_of_strings)
-    if a is int(-1):
-        return False
-
-    return True
+    for k in range(len(list_of_tuples_of_strings)):
+        if problem4a(list_of_tuples_of_strings[k]) != -1:
+            return True
+    return False
 
 
 ###############################################################################

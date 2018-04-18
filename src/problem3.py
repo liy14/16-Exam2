@@ -37,8 +37,9 @@ def main():
     #   that you write here. So KEEP IT SIMPLE here in main.
     # -------------------------------------------------------------------------
     print(p1.get_age())
-    print(p1.celebrate_birthday())
-    print(p1.celebrate_birthdays(3))
+    p1.celebrate_birthday()
+    p1.celebrate_birthdays(3)
+    print(p1.get_age())
     print(p1.older_person())
 
 
@@ -63,7 +64,7 @@ class Person(object):
         """
         # TODO: Implement and test this method.
         self.age = self.age + 1
-        print(self.age, 'Happy Birthday!')
+        print('Happy Birthday!')
 
     def celebrate_birthdays(self, n):
         """
